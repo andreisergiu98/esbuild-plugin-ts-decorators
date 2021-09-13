@@ -1,4 +1,4 @@
-import { join, dirname } from 'path';
+import { dirname } from 'path';
 import {
 	sys,
 	findConfigFile,
@@ -9,11 +9,7 @@ import {
 import { inspect } from 'util';
 
 export function parseTsConfig(tsconfig: string, cwd = process.cwd()): ParsedCommandLine {
-	const fileName = findConfigFile(
-		cwd,
-		sys.fileExists,
-		tsconfig || join(cwd, './tsconfig.json')
-	);
+	const fileName = findConfigFile(cwd, sys.fileExists, tsconfig);
 
 	// if the value was provided, but no file, fail hard
 	if (tsconfig !== undefined && !fileName) {
