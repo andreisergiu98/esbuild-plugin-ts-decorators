@@ -44,7 +44,7 @@ export interface EsbuildDecoratorsOptions {
 }
 
 export const esbuildDecorators = (options: EsbuildDecoratorsOptions = {}): Plugin => ({
-	name: 'tsc',
+	name: 'ts-decorators',
 	async setup(build) {
 		const {
 			cwd = process.cwd(),
