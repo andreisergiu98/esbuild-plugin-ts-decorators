@@ -1,2 +1,1 @@
-export { esbuildDecorators } from './plugin';
-export { esbuildDecorators as default } from './plugin';
+export { esbuildDecorators, esbuildDecorators as default } from './plugin';
