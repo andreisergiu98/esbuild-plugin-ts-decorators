@@ -1,6 +1,6 @@
 {
 	"name": "esbuild-plugin-ts-decorators",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"license": "MIT",
 	"description": "Esbuild plugin for typescript to handle emitDecoratorMetadata",
 	"author": {
@@ -36,7 +36,7 @@
 		"lib"
 	],
 	"scripts": {
-		"build": "tsc",
+		"build": "rm -rf lib && tsc",
 		"lint": "eslint . --ext .ts",
 		"pretty": "prettier --write ."
 	},
