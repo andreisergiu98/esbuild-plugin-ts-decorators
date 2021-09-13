@@ -66,12 +66,6 @@ export const esbuildDecorators = (options: EsbuildDecoratorsOptions = {}): Plugi
 
 		createCache(cacheSize);
 
-		build.onEnd((result) => {
-			if (result.errors.length > 0) {
-				return;
-			}
-		});
-
 		build.onLoad({ filter }, async ({ path }) => {
 			// Just return if we don't need to search the file.
 			if (!force && !parsedTsConfig.options.emitDecoratorMetadata) {
