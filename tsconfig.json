@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"module": "commonjs",
+		"target": "es2020",
+		"lib": ["es2020"],
+		"rootDir": "src",
+		"outDir": "lib",
+		"moduleResolution": "node",
+		"declaration": true,
+		"noImplicitThis": true,
+		"importHelpers": true,
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true
+	}
+}
